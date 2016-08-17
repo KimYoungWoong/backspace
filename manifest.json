@@ -6,7 +6,7 @@
 	"icons": {
 		"128": "backspaceImage.png"
 	},
-	"homepage_url": "http://www.w-here.com",
+	"homepage_url": "https://github.com/KimYoungWoong/backspace",
   	"permissions": [
     	"https://*/*",
     	"http://*/*"
