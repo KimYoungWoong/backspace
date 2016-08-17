@@ -1,13 +1,9 @@
 document.onkeydown = function(event){
-    if(event.keyCode !== 8){
-        return;
-    }else{
+    if(event.keyCode == 8){
         var focus = event.path[0];
-        var passFiled = '/INPUT/OPTION/SELECT/TEXTAREA/i';
-
-        if(passFiled.test(focus) && !document.activeElement.isContentEditable){
+        if(['INPUT','TEXTAREA','SELECT','OPTION'].indexOf(event.target.tagName) == -1 && !document.activeElement.isContentEditable){
             event.preventDefault();
             window.history.back(-1);
         }
     }
-} 
+}
