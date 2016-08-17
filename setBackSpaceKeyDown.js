@@ -3,7 +3,7 @@ document.onkeydown = function(event){
         return;
     }else{
         var focus = event.path[0];
-        var passFiled = /INPUT/OPTION/SELECT/TEXTAREA/i;
+        var passFiled = '/INPUT/OPTION/SELECT/TEXTAREA/i';
 
         if(passFiled.test(focus) && !document.activeElement.isContentEditable){
             event.preventDefault();
